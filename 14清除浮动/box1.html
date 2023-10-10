@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            width: 500px;
+            height: 500px;
+            background-color: black;
+        }
+        .container2{
+            width: 500px;
+            background-color: black;
+        }
+        .container3{
+            background-color: black;
+        }
+        .container4{
+            width: 500px;
+            height: 500px;
+            background-color: black;
+            color: aliceblue;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blanchedalmond;
+            margin: 5px;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: blanchedalmond;
+            margin: 5px;
+            float: left;
+        }
+        .text{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <p>不设置高度，会自行撑开所需宽
+        高度</p>
+    <div class="container2">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <p>宽度也不设置，默认全局宽度</p>
+    <div class="container3">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <p>浮动造成父元素的塌陷，大方块不见了</p>
+    <p>其他元素也会受影响</p>
+    <div class="container4">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="text"></div>
+        受影响的加clear
+    </div>
+    <p></p>
+    <div class="container4">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+    </div>
+    <div class="text"></div>
+</body>
+</html>

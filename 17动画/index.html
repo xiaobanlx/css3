@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            animation: mysnoopy 3s linear 0s infinite;
+        }
+        .box1:hover{animation-play-state: paused;}
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;      
+        }
+        .box2:hover{ background-color: chocolate;}
+        @keyframes name{
+            from{
+
+            }
+            to{
+
+            }
+        }
+        @keyframes mysnoopy{
+            0%{
+                width: 100px;
+                background-color: brown;
+            }
+            50%{
+                width: 200px;
+                background-color: green;
+            }
+            100%{
+                width: 300px;
+                background-color: yellow;
+            }
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>@keyframes   动画</p>
+    <p>name 代表名称</p>
+    <p>from   to  从哪到哪</p>
+    <h2>animation 动画执行:name名称、duration持续时间、timing-functiion速率、delay动画开始时间、interation-cont循环次数、</h2>
+    <h1>animation-play-state :running 播放;paused停止、当鼠标停在相应位置将停止颜色循环</h1>
+    <h1>infinite表示无限次数循环</h1>
+    <h2>timing-function速率:ease逐渐变慢、linear匀速、ease-in加速、ease-out减速、ease-in-out先加速后减速</h2>
+    <h2>direction方向:normal向前播放、alternate(交替)第偶数次向前,第奇数次反方向</h2>
+    <div class="box1"></div>
+    <p></p>
+    <h2>.box2:hover 当鼠标停在相应位置背景颜色出现</h2>
+    <div class="box2"></div>
+    
+</body>
+</html>

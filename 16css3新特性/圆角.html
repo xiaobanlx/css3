@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: blueviolet;
+            border-radius: 15px;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            border-radius: 100%;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            border-radius: 15px 25px;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            border-radius: 15px 25px 35px 45px;
+        }
+    </style>
+</head>
+<body>
+    <div>圆角</div>
+
+    <p>100% /50%圆形</p>
+    <div class="box1"></div>
+    <p>两个值：对角</p>
+    <div class="box2"></div>
+    <p>四个值：顺时针</p>
+    <div class="box3"></div>
+</body>
+</html>

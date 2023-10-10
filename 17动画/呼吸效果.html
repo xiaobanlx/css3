@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:500px;
+            height: 500px;
+            margin: 40px auto;
+            background-color: aqua;
+            border-radius: 50%;
+            box-shadow: 0 1px 2px black;
+            animation: breathe 1s ease-in-out infinite alternate;
+
+        }
+        @keyframes breathe{
+            0%{
+                opacity: 0.2;
+                box-shadow: 0 1px 2px blue;
+            }
+            50%{
+                opacity: 0.5;
+                box-shadow: 0 1px 2px yellow;
+            }
+            100%{
+                opacity: 1;
+                box-shadow: 0 1px 2px green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>opacity 透明度</h1>
+    <div class="box"></div>
+</body>
+</html>
